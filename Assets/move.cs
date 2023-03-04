@@ -35,6 +35,7 @@ public class move : MonoBehaviour
             this.transform.Translate(Vector3.right *10* Time.deltaTime);  
         }  
   
-     
-    }
+    
+	
+	}
 }
