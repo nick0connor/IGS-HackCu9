@@ -2,12 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
- static void RotateObject(GameObject currentObject, float speed, float rotationAngle, int direction)
-        {
-            var value = Time.deltaTime * rotationAngle * speed * direction;
-            currentObject.transform.Rotate(0, 0, value);
-        }
-
+ 
 public class move : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -19,7 +14,7 @@ public class move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		RotateObject(GameObject, GameObject.speed, GameObject.rotationAngle, GameObject.direction);
+		
          if (Input.GetKey(KeyCode.UpArrow))  
         {  
             this.transform.Translate(Vector3.up * 10 * Time.deltaTime);  
@@ -40,6 +35,9 @@ public class move : MonoBehaviour
             this.transform.Translate(Vector3.right *10* Time.deltaTime);  
         }  
   
-     
-    }
+    if( onTriggerExit){
+		
+	}
+	
+	}
 }
