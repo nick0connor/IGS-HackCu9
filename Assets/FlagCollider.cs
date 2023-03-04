@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class spriteScript : MonoBehaviour
+public class FlagCollider : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,13 @@ public class spriteScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Player")
+        {
+            SceneManager.LoadScene("LevelA");
+        }
     }
 }
