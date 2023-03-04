@@ -17,7 +17,7 @@ public class move : MonoBehaviour
 		
          if (Input.GetKey(KeyCode.UpArrow))  
         {  
-            this.transform.Translate(Vector3.up * 10 * Time.deltaTime);  
+            this.transform.Translate(Vector3.up * 8* Time.deltaTime);  
         }  
          
         if (Input.GetKey(KeyCode.DownArrow))  
