@@ -22,7 +22,7 @@ public class FlagCollider : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            SceneManager.LoadScene("LevelA");
+            SceneManager.LoadScene("Level 1");
         }
     }
 }
