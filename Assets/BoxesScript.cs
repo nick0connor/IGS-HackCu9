@@ -18,6 +18,7 @@ public class BoxesScript : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        print("We hit smth");
         if(collision.tag == "Player")
         {
             Transform pt = GameObject.FindGameObjectWithTag("Player").transform;
