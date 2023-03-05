@@ -20,9 +20,19 @@ public class FlagCollider : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        print("Col detected");
         if(collision.tag == "Player")
         {
-            SceneManager.LoadScene("Level 1");
+            print(SceneManager.GetActiveScene().name);
+            if(SceneManager.GetActiveScene().name == "Platform_minigame")
+            {
+                print("goto next");
+                SceneManager.LoadScene("MarioRun");
+            }
+            else if(SceneManager.GetActiveScene().name == "MarioRun")
+            {
+                SceneManager.LoadScene("Level 1");
+            }
         }
     }
 }
