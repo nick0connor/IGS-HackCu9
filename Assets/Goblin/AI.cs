@@ -70,7 +70,7 @@ public class AI : MonoBehaviour
         if (col.gameObject.name == "Character")
         {
             hasTarget = false;
-            gm.killGoblin(this);
+            //gm.killGoblin(this);
             SceneManager.LoadScene("fightScene");
         }
     }
