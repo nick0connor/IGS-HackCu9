@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
 
     public static GameManager Instance;
-    public bool doorOpen;
+    public bool doorOpen = true;
     public int playerHealth = 10;
     public int goblinsKilled = 0;
     public int maxGobs = 3;
@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         goblins = new GameObject[] { goblin1, goblin2, goblin3 };
-        doorOpen = false;
+        //doorOpen = false;
         print(doorOpen);
     }
 

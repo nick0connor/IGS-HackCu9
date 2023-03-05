@@ -382,6 +382,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f4f6e1e663a4d2c92484249d74b96e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gm: {fileID: 1494360176}
+  winScreen: {fileID: 1175498199}
 --- !u!61 &233673066
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -447,7 +449,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -7.84, y: 2.22}
+  m_Offset: {x: -5.89, y: 2.22}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -553,6 +555,10 @@ PrefabInstance:
       propertyPath: gm
       value: 
       objectReference: {fileID: 1494360176}
+    - target: {fileID: 7954677430106552983, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7954677430106552983, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: target
       value: 
@@ -1167,6 +1173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 164525c2ad9ea3843a7f0c12305252e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpen: 0
   playerHealth: 10
   goblinsKilled: 0
   maxGobs: 3
@@ -1479,6 +1486,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1494360176}
     - target: {fileID: 7954677430106552983, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954677430106552983, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 274750444}
@@ -1564,6 +1575,10 @@ PrefabInstance:
       propertyPath: gm
       value: 
       objectReference: {fileID: 1494360176}
+    - target: {fileID: 7954677430106552983, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7954677430106552983, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: target
       value: 

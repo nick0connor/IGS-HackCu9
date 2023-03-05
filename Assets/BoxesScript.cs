@@ -5,8 +5,8 @@ using UnityEditor.SceneManagement;
 
 public class BoxesScript : MonoBehaviour
 {
-    GameManager gm;
-    GameObject winScreen;
+    public GameManager gm;
+    public GameObject winScreen, Lvl;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,10 +30,13 @@ public class BoxesScript : MonoBehaviour
             if (pt.position.x <= -6)
             {
                 print("We hit the exit");
-                if (gm.doorOpen)
-                {
-                    winScreen.SetActive(true);
-                }
+                print(gm.doorOpen);
+                //if (gm.doorOpen)
+                //{
+                    //winScreen.SetActive(true);
+                    //Lvl.SetActive(false);
+                    EditorSceneManager.LoadScene("Weiner");
+                //}
          
             }
             else if(pt.position.y > 3.5)
