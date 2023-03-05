@@ -8,13 +8,13 @@ public class AI : MonoBehaviour
     public bool hasTarget;
     public GameObject target;
     public float speed = 7f;
-    public float waitTime = 10f;
-    private float elapsedTime;
+    public SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
         hasTarget = false;
+        spriteRenderer.flipX = false;
     }
 
     // Update is called once per frame
@@ -23,7 +23,11 @@ public class AI : MonoBehaviour
         if(hasTarget)
         {
             // Go towards the target
-            this.transform.Translate((target.transform.position - this.transform.position).normalized * speed * Time.deltaTime);
+            Vector3 newVector = (target.transform.position - this.transform.position).normalized;
+            this.transform.Translate(newVector * speed * Time.deltaTime);
+
+            // Flip X depending on direction headed
+            spriteRenderer.flipX = !(newVector.x > 0);
 
         } else
         {
@@ -37,9 +41,11 @@ public class AI : MonoBehaviour
                     this.transform.Translate(((Vector3.down * speed) - this.transform.position).normalized * speed * Time.deltaTime);
                     break;
                 case 2:
+                    spriteRenderer.flipX = true;
                     this.transform.Translate(((Vector3.left * speed) - this.transform.position).normalized * speed * Time.deltaTime);
                     break;
                 case 3:
+                    spriteRenderer.flipX = false;
                     this.transform.Translate(((Vector3.right * speed) - this.transform.position).normalized * speed * Time.deltaTime);
                     break;
                 default:
