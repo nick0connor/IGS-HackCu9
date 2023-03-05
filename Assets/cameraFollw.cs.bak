@@ -1,12 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-<<<<<<< HEAD
-using UnityEditor.SceneManagement;
-
-=======
  using UnityEngine.SceneManagement;
->>>>>>> 52f3a92b69150433a7a48e2df82e144846c1ecf9
 
 
 public class cameraFollw : MonoBehaviour
@@ -31,6 +26,6 @@ public class cameraFollw : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         transform.position = new Vector3(player.transform.position.x, player.transform.position.y+2, player.transform.position.z - 10);
+         transform.position = new Vector3(player.transform.position.x, player.transform.position.y-1, player.transform.position.z - 10);
     }
 }
