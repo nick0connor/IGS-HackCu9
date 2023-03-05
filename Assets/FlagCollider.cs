@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class FlagCollider : MonoBehaviour
 {
+    public GameManager gm;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,9 @@ public class FlagCollider : MonoBehaviour
             }
             else if(SceneManager.GetActiveScene().name == "MarioRun")
             {
+
                 SceneManager.LoadScene("Level 1");
+                gm.doorOpen = true;
             }
         }
     }

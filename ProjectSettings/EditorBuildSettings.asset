@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MarioRun.unity
     guid: d1a4ca57f797c8543bfb624f35238546
+  - enabled: 1
+    path: Assets/Scenes/fightScene.unity
+    guid: bc4a03deae351e546a569c0c695a72d6
   m_configObjects: {}

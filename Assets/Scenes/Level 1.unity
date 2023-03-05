@@ -511,11 +511,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7954677430106552981, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.584669
+      value: -11.04
       objectReference: {fileID: 0}
     - target: {fileID: 7954677430106552981, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.8724651
+      value: -5.91
       objectReference: {fileID: 0}
     - target: {fileID: 7954677430106552981, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1170,6 +1170,7 @@ MonoBehaviour:
   playerHealth: 10
   goblinsKilled: 0
   maxGobs: 3
+  currentGoblin: {fileID: 0}
   goblin1: {fileID: 0}
   goblin2: {fileID: 0}
   goblin3: {fileID: 0}
@@ -1435,11 +1436,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7954677430106552981, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.834669
+      value: -1.18
       objectReference: {fileID: 0}
     - target: {fileID: 7954677430106552981, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.34246492
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7954677430106552981, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1521,11 +1522,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7954677430106552981, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.004669
+      value: -10.96
       objectReference: {fileID: 0}
     - target: {fileID: 7954677430106552981, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.497535
+      value: 2.66
       objectReference: {fileID: 0}
     - target: {fileID: 7954677430106552981, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: m_LocalPosition.z
