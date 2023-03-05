@@ -42,7 +42,7 @@ public class DarleyMover : MonoBehaviour
         if(col.gameObject.name == "Blockade")
         {
             //Debug.Log("fadsl;kf");
-            GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+            
         }
     }
     void OnCollisionExit2D(Collision2D col)

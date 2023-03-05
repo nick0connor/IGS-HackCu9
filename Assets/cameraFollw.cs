@@ -1,8 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
 using UnityEditor.SceneManagement;
 
+=======
+ using UnityEngine.SceneManagement;
+>>>>>>> 52f3a92b69150433a7a48e2df82e144846c1ecf9
 
 
 public class cameraFollw : MonoBehaviour
@@ -12,7 +16,16 @@ public class cameraFollw : MonoBehaviour
 	public GameObject player;
     void Start()
     {
-        player = GameObject.Find("Character");
+		 Scene currentScene = SceneManager.GetActiveScene ();
+ 
+         // Retrieve the name of t$$anonymous$$s scene.
+         string sceneName = currentScene.name;
+		if(sceneName == "TEST"){
+        player = GameObject.Find("th");
+		}
+		else if(sceneName == "Level 1"){
+			player = GameObject.Find("Character");
+		}
     }
 
     // Update is called once per frame
