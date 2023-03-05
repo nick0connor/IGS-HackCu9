@@ -9,8 +9,10 @@ public class GoblinFight : MonoBehaviour
 {
 
     private bool goblinTurn, gameActive;
-    public int goblinHealth, playerHealth;
+    public int goblinHealth = 5;
+    public int playerHealth = 10;
 
+    public GameObject stateSpace;
     public GameObject goblin, player, menu;
 
     // Start is called before the first frame update
@@ -18,7 +20,7 @@ public class GoblinFight : MonoBehaviour
     {
         hideUI();
         gameActive = true;
-        StartCoroutine(Test());
+        StartCoroutine(Test(1));
         goblinHealth = 5;
         playerHealth = 10;
     }
@@ -49,7 +51,7 @@ public class GoblinFight : MonoBehaviour
                 goblinTurn = false;
                 showUI();
             }
-        }
+        } 
 	}
 
     private void updatePlayer(int healthChange)
@@ -59,6 +61,7 @@ public class GoblinFight : MonoBehaviour
         if(playerHealth <= 0 )
         {
             gameActive = false;
+            StartCoroutine(Test2(0.1f));
         }
     }
 
@@ -69,6 +72,7 @@ public class GoblinFight : MonoBehaviour
         if(goblinHealth <= 0 )
         {
             gameActive = false;
+            StartCoroutine(Test2(0.1f));
         }
     }
 
@@ -79,11 +83,13 @@ public class GoblinFight : MonoBehaviour
         if(playerAttack)
         {
             updateGoblin(-1);
-            StartCoroutine(Test());
+            //shakeGoblin();
+            StartCoroutine(Test(1));
             
         } else
         {
             updatePlayer(-1);
+            //shakePlayer();
         }
     }
 
@@ -94,11 +100,13 @@ public class GoblinFight : MonoBehaviour
         if (playerAttack)
         {
             updateGoblin(-2);
-            StartCoroutine(Test());
+            //shakeGoblin();
+            StartCoroutine(Test(1));
         }
         else
         {
             updatePlayer(-2);
+            //shakePlayer();
         }
     }
 
@@ -109,15 +117,33 @@ public class GoblinFight : MonoBehaviour
         if (playerAttack)
         {
             updateGoblin(-5);
-            StartCoroutine(Test());
+            //shakeGoblin();
+            StartCoroutine(Test(1));
         }
         else
         {
             updatePlayer(-5);
+            //shakePlayer();
         }
     }
 
+    private void shakePlayer()
+    {
+        Vector3 initPos = player.transform.position;
 
+        player.transform.Translate(Vector3.left * Time.deltaTime);
+        StartCoroutine(Test(0.1f));
+        player.transform.Translate(Vector3.right * Time.deltaTime * 2);
+        StartCoroutine(Test(0.1f));
+        player.transform.Translate(Vector3.left * Time.deltaTime);
+
+        player.transform.position = initPos;
+    }
+
+    private void shakeGoblin()
+    {
+
+    }
 
     public void showUI()
     {
@@ -129,9 +155,15 @@ public class GoblinFight : MonoBehaviour
         menu.SetActive(false);
     }
 
-    IEnumerator Test()
+    IEnumerator Test(float seconds)
     {
         yield return new WaitForSecondsRealtime(1);
         goblinTurn = true;
+    }
+
+    IEnumerator Test2(float seconds)
+    {
+        yield return new WaitForSecondsRealtime(3);
+        stateSpace.SetActive(false);
     }
 }
