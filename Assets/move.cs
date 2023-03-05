@@ -17,13 +17,13 @@ public class move : MonoBehaviour
     void Update()
     {
 		
-         if ((Input.GetKeyDown(KeyCode.UpArrow))||(Input.GetKey(KeyCode.W))  )
+         if ((Input.GetKey(KeyCode.UpArrow))||(Input.GetKey(KeyCode.W)))
         {  
 	this.transform.Translate(Vector3.up * 10 * Time.deltaTime);
                this.transform.Translate(Vector3.down * 3 * Time.deltaTime);
         }  
          
-        if ((Input.GetKey(KeyCode.DownArrow))||(Input.GetKey(KeyCode.S)) )
+        if ((Input.GetKey(KeyCode.DownArrow))||(Input.GetKey(KeyCode.S)))
         {  
             this.transform.Translate(Vector3.down * 10 * Time.deltaTime);  
         }  
