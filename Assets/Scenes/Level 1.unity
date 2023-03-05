@@ -384,6 +384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 1494360176}
   winScreen: {fileID: 1175498199}
+  Lvl: {fileID: 0}
 --- !u!61 &233673066
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -495,6 +496,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 890149263}
     m_Modifications:
+    - target: {fileID: 7954677430106552980, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
+      propertyPath: m_Radius
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7954677430106552981, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1425,6 +1430,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 890149263}
     m_Modifications:
+    - target: {fileID: 7954677430106552980, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
+      propertyPath: m_Radius
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7954677430106552981, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1515,6 +1524,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 890149263}
     m_Modifications:
+    - target: {fileID: 7954677430106552980, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
+      propertyPath: m_Radius
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7954677430106552981, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: m_RootOrder
       value: 5

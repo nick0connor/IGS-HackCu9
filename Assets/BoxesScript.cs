@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class BoxesScript : MonoBehaviour
 {
@@ -35,7 +35,7 @@ public class BoxesScript : MonoBehaviour
                 //{
                     //winScreen.SetActive(true);
                     //Lvl.SetActive(false);
-                    EditorSceneManager.LoadScene("Weiner");
+                    SceneManager.LoadScene("Weiner");
                 //}
          
             }
@@ -45,7 +45,7 @@ public class BoxesScript : MonoBehaviour
             }
             else if(pt.position.x > 2)
             {
-                EditorSceneManager.LoadScene("Platform_minigame");
+                SceneManager.LoadScene("Platform_minigame");
             }
         }
     }
