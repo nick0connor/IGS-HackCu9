@@ -5,4 +5,4 @@ Will Ashcraft
 Jill Broome
 Nick O'Connor
 
-it maybe game
+This is a horror game about Darley towers. it is a top-down game that has interactive elements. 
