@@ -28,6 +28,7 @@ public class GoblinFight : MonoBehaviour
         if(goblinAttack==true){
 			this.transform.Translate(Vector3.up* Time.deltaTime);
 			this.transform.Translate(Vector3.left*3* Time.deltaTime);
+			playerHealth--;
 			float j=Time.time;
 			for(float i=Time.time; j==(i+2);i++){	
 			}

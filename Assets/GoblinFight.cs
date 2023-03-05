@@ -14,7 +14,7 @@ public class GoblinFight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		 bool goblinAttack=true;
+		 bool goblinAttack=false;
 		bool fight=true;
 		int goblinHealth=1;
 		int playerHealth=10;
