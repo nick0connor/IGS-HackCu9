@@ -316,7 +316,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.46, y: 3.89}
+  m_Size: {x: 6.46, y: 3.89}
   m_EdgeRadius: 0
 --- !u!61 &233673063
 BoxCollider2D:
@@ -368,7 +368,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 17.05, y: 1}
+  m_Size: {x: 17.05, y: 1.5}
   m_EdgeRadius: 0
 --- !u!114 &233673065
 MonoBehaviour:
@@ -406,7 +406,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.8, y: 1}
+  m_Size: {x: 7, y: 1}
   m_EdgeRadius: 0
 --- !u!61 &233673067
 BoxCollider2D:
@@ -473,7 +473,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 11.8, y: 0.2}
+  m_Offset: {x: 11.8, y: 0.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -484,7 +484,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.46, y: 1}
+  m_Size: {x: 6, y: 1}
   m_EdgeRadius: 0
 --- !u!1001 &258251497
 PrefabInstance:
@@ -1166,6 +1166,9 @@ MonoBehaviour:
   playerHealth: 10
   goblinsKilled: 0
   maxGobs: 3
+  goblin1: {fileID: 0}
+  goblin2: {fileID: 0}
+  goblin3: {fileID: 0}
   level: {fileID: 890149262}
   winScreen: {fileID: 1175498199}
 --- !u!4 &1494360177
