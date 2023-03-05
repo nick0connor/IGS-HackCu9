@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GoblinFight : MonoBehaviour
 {
@@ -165,5 +166,6 @@ public class GoblinFight : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(3);
         stateSpace.SetActive(false);
+        SceneManager.LoadScene("Level 1");
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AI : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class AI : MonoBehaviour
     public GameObject target;
     public float speed = 7f;
     public SpriteRenderer spriteRenderer;
+    public GameManager gm;
 
     // Start is called before the first frame update
     void Start()
@@ -68,6 +70,8 @@ public class AI : MonoBehaviour
         if (col.gameObject.name == "Character")
         {
             hasTarget = false;
+            gm.killGoblin(this);
+            SceneManager.LoadScene("fightScene");
         }
     }
 
