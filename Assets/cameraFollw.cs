@@ -1,12 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-<<<<<<< HEAD
-using UnityEditor.SceneManagement;
-
-=======
  using UnityEngine.SceneManagement;
->>>>>>> 52f3a92b69150433a7a48e2df82e144846c1ecf9
 
 
 public class cameraFollw : MonoBehaviour
