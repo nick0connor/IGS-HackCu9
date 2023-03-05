@@ -10,11 +10,11 @@ EditorBuildSettings:
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Level 1.unity
-    guid: 1c4ac218ed1dabc4287134a1775ad90c
+    guid: 5da360d8e13b24008acde54abeb0266b
   - enabled: 1
     path: Assets/Scenes/Platform_minigame.unity
     guid: 582ab9ddbe57f4143977b7ff616a96b4
   - enabled: 1
-    path: Assets/Scenes/LevelA.unity
-    guid: e676f27ac81ff4e45a2bf981a1951c65
+    path: Assets/Scenes/MarioRun.unity
+    guid: d1a4ca57f797c8543bfb624f35238546
   m_configObjects: {}
