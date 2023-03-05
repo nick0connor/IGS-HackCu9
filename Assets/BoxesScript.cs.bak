@@ -34,7 +34,7 @@ public class BoxesScript : MonoBehaviour
             {
                 print("We hit the elevator");
             }
-            else if(pt.position.x > 2)
+            else if(pt.position.x > 4.5)
             {
                 EditorSceneManager.LoadScene("Platform_minigame");
             }
