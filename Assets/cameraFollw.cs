@@ -11,7 +11,7 @@ public class cameraFollw : MonoBehaviour
 	public GameObject player;
     void Start()
     {
-        player = GameObject.Find("th");
+        player = GameObject.Find("Character");
     }
 
     // Update is called once per frame
