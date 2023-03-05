@@ -20,6 +20,7 @@ public class GoblinFight : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gm = FindObjectOfType<GameManager>();
         hideUI();
         gameActive = true;
         StartCoroutine(Test(1));
@@ -179,6 +180,6 @@ public class GoblinFight : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(3);
         stateSpace.SetActive(false);
-        SceneManager.LoadScene("Level 1");
+        gm.EndGoblinFight();
     }
 }

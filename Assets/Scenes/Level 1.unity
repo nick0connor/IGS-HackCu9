@@ -165,7 +165,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 890149263}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &233673057
 Rigidbody2D:
@@ -495,7 +495,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7954677430106552981, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7954677430106552981, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: m_LocalScale.x
@@ -550,6 +550,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7954677430106552983, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1494360176}
+    - target: {fileID: 7954677430106552983, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 274750444}
@@ -559,7 +563,7 @@ PrefabInstance:
       objectReference: {fileID: 757823759}
     - target: {fileID: 7954677430106552984, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: m_Name
-      value: Goblin
+      value: Goblin-1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
@@ -670,7 +674,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 890149263}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &274750448
 BoxCollider2D:
@@ -978,10 +982,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 258251498}
   - {fileID: 233673056}
   - {fileID: 274750447}
   - {fileID: 1645444034}
+  - {fileID: 258251498}
   - {fileID: 1847087580}
   - {fileID: 1870871561}
   m_Father: {fileID: 0}
@@ -1169,6 +1173,7 @@ MonoBehaviour:
   goblin1: {fileID: 0}
   goblin2: {fileID: 0}
   goblin3: {fileID: 0}
+  goblins: []
   level: {fileID: 890149262}
   winScreen: {fileID: 1175498199}
 --- !u!4 &1494360177
@@ -1268,7 +1273,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 890149263}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1650594316
 GameObject:
@@ -1469,6 +1474,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7954677430106552983, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1494360176}
+    - target: {fileID: 7954677430106552983, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 274750444}
@@ -1478,7 +1487,7 @@ PrefabInstance:
       objectReference: {fileID: 906840826}
     - target: {fileID: 7954677430106552984, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: m_Name
-      value: Goblin (1)
+      value: Goblin-2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
@@ -1551,6 +1560,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7954677430106552983, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1494360176}
+    - target: {fileID: 7954677430106552983, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 274750444}
@@ -1560,7 +1573,7 @@ PrefabInstance:
       objectReference: {fileID: 1870871560}
     - target: {fileID: 7954677430106552984, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}
       propertyPath: m_Name
-      value: Goblin (2)
+      value: Goblin-3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83bfcb2035a73a34b98215b609fe9d12, type: 3}

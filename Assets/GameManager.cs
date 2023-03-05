@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,38 +12,47 @@ public class GameManager : MonoBehaviour
     public int goblinsKilled = 0;
     public int maxGobs = 3;
 
+    public GameObject currentGoblin;
+
     private bool[] dead = new bool[] {false, false, false};
     public GameObject goblin1, goblin2, goblin3;
+    public GameObject[] goblins;
 
     public GameObject level, winScreen;
 
     void Awake(){
         Instance = this;
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        goblins = new GameObject[] { goblin1, goblin2, goblin3 };
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            killGoblin();
+       
+    }
+
+    public void LoadGobFight(GameObject goblin)
+    {
+        currentGoblin = goblin;
+        SceneManager.LoadScene("fightScene");
+    }
+
+    public void EndGoblinFight()
+    {
+        if(currentGoblin != null) {
+            Destroy(currentGoblin);
         }
+        SceneManager.LoadScene("Level 1");
     }
 
     public void killGoblin()
     {
-        goblinsKilled++;
         
-        if(goblinsKilled >= maxGobs)
-        {
-            level.SetActive(false);
-            winScreen.SetActive(true);
-        }
     }
 }
