@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour
     public void EndGoblinFight()
     {
         if(currentGoblin != null) {
+            
             Destroy(currentGoblin);
         }
         SceneManager.LoadScene("Level 1");
