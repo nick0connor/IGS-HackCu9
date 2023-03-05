@@ -20,7 +20,17 @@ public class BoxesScript : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
+            Transform pt = GameObject.FindGameObjectWithTag("Player").transform;
+            print(pt.position.y);
             //If this is the player, they may have either hit the elevator or exit
+            if (pt.position.x <= 7)
+            {
+                print("We hit the exit");
+            }
+            else if(pt.position.y > 3.5)
+            {
+                print("We hit the elevator");
+            }
         }
     }
 }
