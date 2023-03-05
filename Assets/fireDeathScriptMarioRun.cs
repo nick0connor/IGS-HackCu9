@@ -19,7 +19,7 @@ public class fireDeathScriptMarioRun : MonoBehaviour
 
 	public void OnTriggerEnter2D(Collider2D collision)
 	{
-		print("A collision Occured");
+		//print("A collision Occured");
 		if(collision.gameObject.tag == "Player")
 		{
 			//Kill the player, they just got hit by the camera
